@@ -3,8 +3,14 @@ name = "uv-test"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.2.4",
+    "pandas>=2.2.3",
+    "polar>=0.0.127",
+    "requests>=2.32.3",
+    "tensor>=0.3.6",
+]
 
 [tool.uv]
 upgrade = true
@@ -32,7 +38,7 @@ ignore_errors = false
 ignore_missing_imports = true
 local_partial_types = true
 no_implicit_optional = true
-python_version = 3.12
+python_version = 3.13
 strict_equality = true
 strict_optional = true
 warn_no_return = true
